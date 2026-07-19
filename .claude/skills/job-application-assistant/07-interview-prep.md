@@ -2,112 +2,105 @@
 framework_version: 1.0.0
 ---
 
-# Interview Preparation Guide
+# Interview Preparation — Illya Grytsyk
 
-<!-- SETUP: STAR examples are personalized by running /setup based on your actual experience -->
+## STAR Examples
 
-## STAR Format
+### STAR 1: AI Bias Detection & Documentation (Outlier)
+**Situation:** As an AI Trainer at Outlier, I was evaluating LLM responses for the Spanish-speaking market and noticed recurring patterns where AI outputs reflected cultural bias — favoring European Spanish expressions over Latin American variants, and sometimes generating stereotypical responses for Latin American contexts.
+**Task:** I needed to not just flag individual bad responses, but document systematic bias patterns so the models could be retrained to serve Latin American users accurately.
+**Action:** I built a personal documentation system tracking bias patterns by category (cultural, regional, gender), cross-referenced problematic responses, and wrote detailed evaluation notes that went beyond the standard rubric. I maintained this documentation over 1 year with 10-20 weekly evaluations.
+**Result:** My evaluations contributed to more accurate, culturally-aware model responses for the Spanish-speaking market. The experience sharpened my ability to identify subtle bias patterns and communicate them clearly — skills directly applicable to any AI product role.
 
-Structure answers as: **Situation** (context), **Task** (your responsibility), **Action** (what you did), **Result** (outcome).
+### STAR 2: 6 Landing Pages in 3 Months (The Brand Crew)
+**Situation:** The Brand Crew was a new creative agency needing to prove itself quickly. We had multiple clients waiting but no established production workflow.
+**Task:** Design and develop 6 landing pages for different local businesses within 3 months, each with unique branding, while building the agency's reusable infrastructure.
+**Action:** I created a 3-layer CSS token system for cross-project consistency, integrated AI tools (ChatGPT, Claude) to automate content generation, implemented WCAG 2.2 AA accessibility from day one, and built reusable component libraries. I coordinated directly with each client on their requirements while maintaining quality across all projects simultaneously.
+**Result:** All 6 landing pages delivered on time, establishing the agency's reputation. The reusable design system reduced production time by roughly 30% on subsequent projects.
 
-Keep answers to 1-2 minutes. Be specific. End with what you learned or would do differently.
+### STAR 3: Business from Zero to $500k/month (Stock para tu Negocio)
+**Situation:** Started a retail business from scratch with no funding, competing against established local vendors.
+**Task:** Build a sustainable business with recurring revenue, manage inventory, sales, and customer relationships.
+**Action:** Defined an ICP (iPhone accessory buyers), developed a consultative selling approach (in-person visits with samples, direct negotiation), built a Mercado Libre channel for passive acquisition, and maintained 7 recurring business clients through consistent relationship management.
+**Result:** Reached ~$500k ARS/month in revenue with 10+ products. Closed the business after 3 years to pursue programming and web design full-time — demonstrating strategic decision-making about career direction.
 
-## Ready-Made STAR Examples
+### STAR 4: LiDAR Virtual Tour (Apple Service)
+**Situation:** A service center wanted to showcase their 50m² facility remotely, but standard photography couldn't capture the space effectively.
+**Task:** Create an immersive virtual tour that potential customers could experience from their devices.
+**Action:** I used LiDAR photogrammetry to scan the entire 50m² space, processed the 3D data, embedded the result in a landing page using Three.js/WebGL, and coordinated a team of a graphic designer and photographer from briefing to delivery.
+**Result:** A functional immersive virtual tour that the client could use for remote customer engagement. Demonstrated ability to combine emerging technology (LiDAR, WebGL) with practical business needs.
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### STAR 5: Voice Assistant Demo for Healthcare (Pragma)
+**Situation:** A tech/creative side project team (frontend + graphic designer + devops) wanted to enter the healthcare sector with an AI-powered solution.
+**Task:** Research and build a prototype that could demonstrate value to potential healthcare clients.
+**Action:** I led the product planning phase — researching healthcare sector needs, defining the value proposition, coordinating across the team (designer and backend), and driving toward a voice assistant as the highest-impact demo concept.
+**Result:** A working voice assistant demo ready for client presentations. Showed ability to drive product direction in a multidisciplinary team without formal authority.
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+## Interview Frameworks
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### For Consultancy Roles (Globant, Accenture, Deloitte)
+Prepare for:
+- **Case interviews:** Practice structured problem-solving
+- **Behavioral questions:** "Tell me about a time you managed conflicting stakeholder priorities"
+- **Client management:** "How do you handle a client who doesn't know what they want?"
+- **AI knowledge:** "What's your experience with AI in production?"
+- **Gap honesty:** "Your background is non-traditional — how does it prepare you for consulting?"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### For Product Roles (MELI, startups)
+Prepare for:
+- **Product sense:** "Design a product feature for [X]"
+- **Analytical:** "How would you measure success for [Y]?"
+- **Execution:** "Walk me through your process from idea to launch"
+- **Strategy:** "Where should our product invest next quarter?"
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### For Agency Roles
+Prepare for:
+- **Portfolio walkthrough:** Your process, decisions, outcomes
+- **Client communication:** "How do you handle scope creep?"
+- **Speed vs quality:** "How do you balance delivery speed with quality?"
+- **AI in creative work:** "How are you using AI in your workflow?"
 
-## Common Tough Questions
+### For AI Agent Roles
+Prepare for:
+- **Agent architecture:** "How would you design an AI agent system for [X]?"
+- **Evaluation methodology:** "How do you measure AI output quality?"
+- **Bias & safety:** "What experience do you have with AI safety?"
+- **Practical building:** "What AI agents have you built? Walk me through one."
 
-### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+## Questions to Ask Interviewers
 
-### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+### Strategy & Culture
+- "How does this team balance strategic thinking with day-to-day execution?"
+- "What's the ratio of strategic work vs. operational/tactical work in this role?"
+- "How is AI being adopted across the organization today?"
 
-### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+### Growth & Learning
+- "What does success look like in the first 6 months?"
+- "What's the professional development budget or policy?"
+- "Are there opportunities to work on AI agent projects specifically?"
 
-### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+### For NZ Companies Specifically
+- "How does your team handle cross-cultural collaboration?"
+- "Do you work with Latin American clients or markets?"
+- "What's the work culture like for remote or international team members?"
 
-### "Why this company specifically?"
-> Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.
+## Key Messages to Communicate
 
-## Questions You Should Ask Interviewers
+### Your Superpower
+"I combine consumer psychology, product strategy, and hands-on AI execution. I don't just design or just code or just manage — I do all three, and I use that full picture to make better decisions."
 
-### About the Role
-- "What does a typical week look like in this role?"
-- "What would success look like in the first 6 months?"
-- "What's the biggest challenge the team is facing right now?"
+### Your Trajectory
+"I'm transitioning from project management and design into Business Analysis and Product Engineering, with AI as my specialization. My varied background isn't a lack of focus — it's a deliberate foundation for understanding the full product lifecycle."
 
-### About the Team
-- "How big is the team, and how do you divide work?"
-- "What does the development/project lifecycle look like, from idea to production?"
-- "How do you onboard new team members?"
+### Your Honest Gaps
+- "My English is B1 and improving — I'm planning an immersion experience in New Zealand to accelerate this."
+- "I haven't worked in a large-scale product organization yet, but I've built and managed real products with real clients and revenue."
 
-### About Tech & Growth
-- "What's your current tech stack for [relevant area]?"
-- "Is there room to grow into more architectural or strategic decisions?"
-- "How does the team stay current with new tools and methods?"
-
-### About Culture (use these to prevent disappointment)
-- "How would you describe the team culture?"
-- "What does professional development look like here?"
-- "Is there flexibility for remote/hybrid work?"
-- "What's the balance between development/new projects and maintenance work?"
-- "How would you describe the leadership style in this team?"
-- "What do people who thrive here have in common?"
-
-## Phone/Video Interview Tips
-- Have STAR examples written out (use this file)
-- Keep a glass of water nearby
-- Smile when speaking (it changes your tone)
-- Ask for clarification if a question is vague
-- It's OK to take 5 seconds to think before answering
-- End with: "Is there anything else you'd like to know about my background?"
-
-## After the Application (Best Practice)
-
-### Follow-Up Etiquette
-- **Don't call to "stand out"** or to learn more about the role post-submission - this risks a negative impression
-- If the employer specified a timeline, respect it and wait
-- If no timeline was given and significant time has passed (2+ weeks), a brief call to ask about status is acceptable
-- If you have genuinely new, relevant information to share, a short follow-up is fine
-
-### Thank-You Notes
-- When you receive any update (interview invitation, rejection, or status update), send a brief thank-you message
-- Express appreciation for their time and the process
-- Keep it short (2-3 sentences)
-
-## Roleplay Guidelines
-When the user asks for interview practice:
-1. Ask which role/company to simulate
-2. Start with easy warm-up questions ("Tell me about yourself")
-3. Progress to role-specific technical questions
-4. Include 1-2 behavioral questions using the competencies from the job posting
-5. End with a tough question or curveball
-6. After each answer, give brief feedback: what worked, what to sharpen
-7. Suggest which STAR example would work best for each question
+## Pre-Interview Checklist
+- [ ] Researched company's recent news, products, and culture
+- [ ] Reviewed job posting and prepared specific examples matching each requirement
+- [ ] Prepared 2-3 questions about the role, team, and company
+- [ ] Practiced STAR stories for likely behavioral questions
+- [ ] Checked LinkedIn for interviewer background (if known)
+- [ ] Prepared honest bridge for English level concerns
+- [ ] Verified portfolio/demo links work

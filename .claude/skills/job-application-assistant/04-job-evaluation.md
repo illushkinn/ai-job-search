@@ -2,9 +2,7 @@
 framework_version: 1.0.0
 ---
 
-# Job Evaluation Framework
-
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
+# Job Evaluation Framework — Illya Grytsyk
 
 ## Scoring Dimensions
 
@@ -20,9 +18,11 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Project Management, AI Evaluation & QA, UX/UI Supervision, Product Planning, Sprint Planning, Consultative Selling, Go-to-Market Strategy, Consumer Psychology
+
+**Moderate match areas:** Frontend Development (Three.js), Process Automation (n8n), Design Systems, WCAG Accessibility, CRM Management, LinkedIn Prospecting
+
+**Weak match areas:** Backend development, DevOps, data engineering, advanced ML model training, native mobile development
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -34,9 +34,11 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** AI training & evaluation, project management (agency), consultative selling, product planning, startup operations
+
+**Moderate:** Creative agency, ecommerce, community management, graphic design, product management
+
+**Entry-level:** Formal BA/PE roles in big consultancies, product management at scale (MELI-level), enterprise consulting
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -48,13 +50,17 @@ Does the role and company culture match the behavioral profile?
 | 40-59 | Some friction areas |
 | 0-39 | Significant culture mismatch |
 
-**Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
+**Red flags to research:** Bureaucratic cultures, pure execution without strategy involvement, no AI adoption, rigid hierarchies, lack of autonomy
+
+**Green flags:** High uncertainty tolerance needed, cross-functional collaboration, creative+tech blend, startups/scale-ups, flat structures
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- Remote Argentina or LATAM: PASS
+- Remote global: PASS (with English level consideration)
+- Hybrid Buenos Aires (occasional travel): PASS
+- On-site Mar del Plata: PASS (limited opportunities)
+- Requires relocation outside LATAM: FLAG (discuss — NZ visa planned but not active)
+- On-site outside MDP/BsA without remote option: FAIL (deal-breaker)
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -67,41 +73,31 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Transition fully into Business Analysis + Product Engineering with AI specialization
+- Build and deploy AI agent systems (not just evaluate them)
+- Work in environments that value strategy + execution in parallel
+- Eventually work in or with NZ market (creative/tech)
+- Position as "Agentic AI Consultant" — hybrid business + product + AI agent expertise
 
-**Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+**Tasks that energize:**
+- Defining product strategy and user experience
+- Building AI agents and automating workflows
+- Consumer psychology research and application
+- Cross-functional team coordination
+- Learning by building real things
+- Mentoring and sharing knowledge
+- Creative + technology intersections
 
-**Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+**Tasks that drain:**
+- Pure execution without understanding the "why"
+- Repetitive manual work without automation
+- Bureaucracy-heavy environments
+- Being siloed into one function (e.g., "just frontend" or "just PM")
 
-### 6. Salary Benchmark (Optional)
-
-If the salary lookup tool is configured (`salary_data.json` exists), look up the company:
-```
-python salary_lookup.py "<Company Name>" --json
-```
-
-If a city is known from the posting, add `--city "<City>"` to narrow results.
-
-Present findings as:
-```
-### Salary Benchmark
-| Metric | Value |
-|--------|-------|
-| [Category] index | XX.X (+/-X.X% vs baseline) |
-| Overall index | XX.X (+/-X.X% vs baseline) |
-```
-
-Interpret results relative to the baseline defined in the data file's metadata. For index-based data, higher typically means above-market compensation.
-
-If the salary tool is not configured, skip this section.
+**Life situation alignment:**
+- **Security:** Freelancing currently, seeking stable role with growth
+- **Flexibility:** Remote-first, value autonomy
+- **Professional development:** AI agents, product management, English fluency
 
 ## Output Format
 
@@ -130,21 +126,13 @@ Present the evaluation as:
 
 ### Recommendation
 [1-2 sentences: apply/skip/apply with caveats]
-
-### Company Research Checklist
-- [ ] Checked company website (mission, values, recent news)
-- [ ] Checked review sites (Glassdoor, Jobindex, etc.)
-- [ ] Checked LinkedIn for team size, recent hires, connections
-- [ ] Checked media for restructuring, growth, or workplace issues
-- [ ] Identified network contacts who may know the team/manager
 ```
 
 ## Weighting
-- Technical Skills: 30%
+- Technical Skills: 25%
 - Experience Match: 25%
-- Behavioral Fit: 15%
+- Behavioral Fit: 20%
 - Career Alignment: 30%
-
 (Location is pass/fail, not weighted)
 
 ## Thresholds
@@ -154,24 +142,29 @@ Present the evaluation as:
 - **Weak Fit** (30-44): Probably skip unless strategic reasons
 - **Poor Fit** (<30): Skip
 
-## Pre-Application: Call the Employer (Best Practice)
+## Role Type Shortcuts (for quick classification)
 
-Before writing the application, consider whether the candidate should call the contact person listed in the posting. **Only call if there are substantive questions** - never call just to "be remembered."
+### AI & Agentic Roles
+- AI Agent Designer, AI Product Manager, AI Consultant, AI Adoption Specialist
+- Agentic AI Architect, AI Solutions Engineer, AI Transformation Lead
+- **Typical fit:** 70-90 (Illya's AI evaluation + product + strategy combo is rare)
 
-### When to Suggest Calling
-- The posting has unclear or ambiguous requirements
-- It's unclear which competencies are essential vs. nice-to-have
-- The role description is vague about day-to-day tasks
-- There's a named contact person who invites questions
+### Business Analysis & Product
+- Business Analyst, Product Engineer, Product Manager, Product Owner
+- Technical Product Manager, Product Operations Manager
+- **Typical fit:** 65-85 (strong alignment with stated career direction)
 
-### Good Questions to Ask
-- "What are the primary challenges in this role?"
-- "How is time typically divided across the listed responsibilities?"
-- "Which competencies are most critical for success in this position?"
-- "What does success look like in the first 6-12 months?"
+### Consulting & Strategy
+- Digital Transformation Consultant, Innovation Consultant, Solutions Consultant
+- Consultative Selling Specialist, Go-to-Market Strategist
+- **Typical fit:** 60-80 (consulting background + varied experience)
 
-### Rules for the Call
-- Prepare a 30-second "elevator pitch" about your background in case they ask
-- The call's purpose is **gathering information**, not delivering a pitch
-- Take notes - use what you learn to tailor the application
-- Reference the conversation naturally in the cover letter ("After speaking with [name], I was especially drawn to...")
+### Growth & Operations
+- Growth Product Manager, Growth Marketing Manager, Operations Manager
+- **Typical fit:** 50-70 (some direct experience, transferable skills)
+
+### NZ & International
+- Creative agencies in Auckland/Wellington
+- Bilingual roles bridging LATAM and NZ markets
+- Remote roles from NZ companies
+- **Typical fit:** Varies (high potential, need to assess per role)
